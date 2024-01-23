@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
   nitro: {
-    prerender: 'github_pages',
+    preset: 'github_pages',
   },
   devtools: {
     enabled: true
