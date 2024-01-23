@@ -37,6 +37,9 @@ export default defineNuxtConfig({
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
+  nitro: {
+    prerender: 'github_pages',
+  },
   devtools: {
     enabled: true
   }
