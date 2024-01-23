@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/api/search.json': { prerender: true },
+    '/api/search.json': { prerender: false },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
   nitro: {
