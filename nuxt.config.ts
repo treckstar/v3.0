@@ -24,21 +24,20 @@ export default defineNuxtConfig({
   },
   // Fonts
   fontMetrics: {
-    fonts: ['DM Sans']
+    fonts: ['DM Sans', 'Poppins', 'Recusrive']
   },
   googleFonts: {
     display: 'swap',
     download: true,
     families: {
-      'DM+Sans': [300, 400, 500, 600, 700]
+      'DM+Sans': [300, 400, 500, 600, 700],
+      Poppins: [300, 400, 500, 600, 700],
+      Recursive:[600]
     }
   },
   routeRules: {
-    '/api/search.json': { prerender: false },
+    '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
-  },
-  nitro: {
-    preset: 'github_pages',
   },
   devtools: {
     enabled: true
