@@ -21,7 +21,7 @@ dependencies:
     specifier: ^1.3.0
     version: 1.3.0
   '@nuxt/ui-pro':
-    specifier: git+ssh://git@github.com:treckstar/nuxt-ui.git
+    specifier: git+https://treckstar:${GITHUB_TOKEN}@github.com:treckstar/nuxt-ui.git
     version: git@github.com+treckstar/nuxt-ui/a2ce2d80e12ac9aa9061690c30c4111effc5884e(nuxt@3.9.3)(vite@5.0.12)(vue@3.3.13)
   '@nuxtjs/fontaine':
     specifier: ^0.4.1
@@ -29,9 +29,6 @@ dependencies:
   '@nuxtjs/google-fonts':
     specifier: ^3.1.3
     version: 3.1.3
-  '@treckstar/ui-pro':
-    specifier: git+https://treckstar:${GITHUB_TOKEN}@github.com:treckstar/nuxt-ui.git
-    version: git@github.com+treckstar/nuxt-ui/a2ce2d80e12ac9aa9061690c30c4111effc5884e(nuxt@3.9.3)(vite@5.0.12)(vue@3.3.13)
   '@vueuse/nuxt':
     specifier: ^10.7.2
     version: 10.7.2(nuxt@3.9.3)(vue@3.3.13)
