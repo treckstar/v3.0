@@ -31,7 +31,8 @@ export default defineNuxtConfig({
       prerender: {
         chromium: false,
         sharp: false,
-        resvg: 'wasm'
+        resvg: 'wasm',
+        cssInline: 'wasm'
       }
     }
   },
