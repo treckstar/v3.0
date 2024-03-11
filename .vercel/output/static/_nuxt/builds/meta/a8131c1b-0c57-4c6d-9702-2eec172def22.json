@@ -1,1 +1,0 @@
-{"id":"a8131c1b-0c57-4c6d-9702-2eec172def22","timestamp":1710138812332,"matcher":{"static":{"/":null,"/api":null,"/api/search.json":{"prerender":true},"/docs":{"redirect":"/docs/getting-started/introduction"},"/docs/getting-started":{"redirect":"/docs/getting-started/introduction"}},"wildcard":{},"dynamic":{}},"prerendered":[]}
