@@ -1,0 +1,43 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1em"
+  height="1em"
+  viewBox="0 0 48 48"
+  style="color: deeppink; fill: currentColor; vertical-align: middle; display: inline-block; user-select: none;"
+>
+  <mask id="ipSWoolenHat0">
+    <g
+      fill="none"
+      stroke="lime"
+      stroke-width="4"
+    >
+      <rect
+        width="40"
+        height="10"
+        x="4"
+        y="34"
+        fill="lime"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        rx="2"
+      />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15 26v8m9-8v8m9-8v8"
+      />
+      <circle
+        cx="24"
+        cy="8"
+        r="4"
+        fill="lime"
+      />
+      <path d="M8 34c0-8.25 1-22 16-22s16 13.75 16 22" />
+    </g>
+  </mask>
+  <path
+    fill="currentColor"
+    d="M0 0h48v48H0z"
+    mask="url(#ipSWoolenHat0)"
+  />
+</svg>
