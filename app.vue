@@ -19,8 +19,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - treckstar.net',
-  ogImage: 'https://saas-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
+  ogImage: 'https://v3.sites.treckstar.net/social-card.png',
+  twitterImage: 'https://v3.sites.treckstar.net/social-card.png',
   twitterCard: 'summary_large_image'
 })
 </script>

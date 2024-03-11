@@ -22,9 +22,7 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'simple-icons']
   },
   routeRules: {
-    '/api/search.json': { prerender: true },
-    '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
-    '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
+    '/api/search.json': { prerender: true }
   },
   devtools: {
     enabled: false
@@ -38,7 +36,7 @@ export default defineNuxtConfig({
     appManifest: true
   },
   nitro: {
-    preset: 'vercel_edge',
+    preset: 'vercel',
     prerender: {
       // failOnError: false
       // TODO: investigate

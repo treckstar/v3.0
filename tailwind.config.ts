@@ -5,10 +5,10 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        serif: ['DM Sans', ...defaultTheme.fontFamily.serif],
-        sans: ['Poppins', 'Poppins fallback', ...defaultTheme.fontFamily.sans],
-        recursive: ['Recursive', 'Recursive fallback', ...defaultTheme.fontFamily.sans],
-        display: ['Recursive', 'Recursive fallback', ...defaultTheme.fontFamily.sans],
+        serif: ['Poppins', ...defaultTheme.fontFamily.serif],
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+        recursive: ['Recursive',...defaultTheme.fontFamily.sans],
+        display: ['Recursive', ...defaultTheme.fontFamily.sans],
       }
     }
   }
