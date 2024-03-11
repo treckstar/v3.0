@@ -25,7 +25,21 @@ export default defineNuxtConfig({
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
+  ogImage: {
+    compatibility: {
+      // disable chromium dependency for prerendering (skips the chromium install in CIs)
+      prerender: {
+        chromium: false,
+        sharp: false,
+        resvg: 'wasm'
+      }
+    }
+  },
   devtools: {
-    enabled: true
+    enabled: true,
+
+    timeline: {
+      enabled: true
+    }
   }
 })
