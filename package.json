@@ -22,7 +22,7 @@
     "@treckstar/ui-pro": "^1.0.3",
     "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.10.3",
-    "nuxt-og-image": "3.0.0-rc.42",
+    "nuxt-og-image": "^2.2.4",
     "satori": "^0.10.13"
   },
   "devDependencies": {
