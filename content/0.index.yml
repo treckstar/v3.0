@@ -1,16 +1,16 @@
-title: Nuxt UI Pro - SaaS template
-description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: treckstar.net
+description: Don't underestimate the importance of your website. It's the first impression you make to your audience.
 navigation: false
 hero:
   title: Build your SaaS in seconds
-  description: This template demonstrates most of Nuxt UI Pro's components. It's a great starting point to build your own SaaS.
+  description: Don't wait another 5 years to automate your manual processes.\n  Let's get started today!
   headline:
     label: Made with Nuxt UI Pro
     to: https://ui.nuxt.com/pro
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
-      to: '/signup'
+      to: "/signup"
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
