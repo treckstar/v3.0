@@ -30,9 +30,7 @@ export default defineNuxtConfig({
       // disable chromium dependency for prerendering (skips the chromium install in CIs)
       prerender: {
         chromium: false,
-        sharp: false,
-        resvg: 'wasm',
-        cssInline: 'wasm'
+        sharp: false
       }
     }
   },
@@ -42,5 +40,8 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true
     }
+  },
+  nitro: {
+    preset: 'vercel'
   }
 })

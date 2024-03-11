@@ -20,6 +20,9 @@ dependencies:
   '@nuxt/image':
     specifier: ^1.4.0
     version: 1.4.0
+  '@resvg/resvg-js':
+    specifier: ^2.6.0
+    version: 2.6.0
   '@treckstar/ui-pro':
     specifier: ^1.0.3
     version: 1.0.3(nuxt@3.10.3)(vite@5.1.4)(vue@3.4.19)
@@ -32,6 +35,9 @@ dependencies:
   nuxt-og-image:
     specifier: 3.0.0-rc.42
     version: 3.0.0-rc.42(@lezer/common@1.2.1)(@nuxt/devtools@1.0.8)(@vue/compiler-core@3.4.21)(nuxt@3.10.3)(postcss@8.4.35)(vite@5.1.4)(vue@3.4.19)(webpack@5.90.3)
+  satori:
+    specifier: ^0.10.13
+    version: 0.10.13
 
 devDependencies:
   '@nuxt/eslint-config':
