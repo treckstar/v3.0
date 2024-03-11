@@ -23,25 +23,36 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/api/search.json': { prerender: true },
-    '/docs': { redirect: '/docs/getting-started', prerender: false }
+    '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
+    '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
   },
-  ogImage: {
-    compatibility: {
-      // disable chromium dependency for prerendering (skips the chromium install in CIs)
-      prerender: {
-        chromium: false,
-        sharp: false
+  devtools: {
+    enabled: false
+  },
+  typescript: {
+    strict: false
+  },
+  experimental: {
+    headNext: true,
+    sharedPrerenderData: true,
+    appManifest: true
+  },
+  nitro: {
+    preset: 'vercel_edge',
+    prerender: {
+      // failOnError: false
+      // TODO: investigate
+      // Ignore weird url from crawler on some modules readme
+      ignore: ['/modules/%3C/span', '/modules/%253C/span', '/docs/getting-started/</span', '/docs/getting-started/%3C/span']
+    },
+    hooks: {
+      'prerender:generate' (route) {
+        // TODO: fix issue with recursive fetches with query string, e.g.
+        // `/enterprise/agencies?region=europe&amp;amp;amp;service=ecommerce&amp;amp;service=ecommerce&amp;service=content-marketing`
+        if (route.route?.includes('&amp;')) {
+          route.skip = true
+        }
       }
     }
   },
-  devtools: {
-    enabled: true,
-
-    timeline: {
-      enabled: true
-    }
-  },
-  nitro: {
-    preset: 'vercel'
-  }
 })
